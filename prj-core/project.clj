@@ -1,4 +1,4 @@
-(defproject jp.nijohando.prj/prj-core "1.0.0-SNAPSHOT"
+(defproject jp.nijohando.prj/prj-core "1.0.0"
   :description "Project helper functions for deps.edn"
   :url "http://github.com/nijohando/prj"
   :license {:name "Eclipse Public License"

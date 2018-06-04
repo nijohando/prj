@@ -1,4 +1,4 @@
-(defproject jp.nijohando.prj/prj-cljs "1.0.0-SNAPSHOT"
+(defproject jp.nijohando.prj/prj-cljs "1.0.0"
   :description "ClojureScript helper functions for prj"
   :url "http://github.com/nijohando/prj"
   :license {:name "Eclipse Public License"
