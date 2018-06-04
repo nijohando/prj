@@ -4,66 +4,21 @@ Prj provides simple functions for the developing, testing and release of the clj
 
 ## Functions
 
-| Functions              | dsec                              |
-| :-                     | :-                                |
-| prj-core               | Bootstraping tasks.               |
-| prj-repl               | Helpers for repl                  |
-| prj-test               | Helpers for clojure.test          |
-| prj-package            | Deployment, Installation jar      |
-| prj-cljs               | Helpers for cljs build            |
-| prj-cljs-nodejs        | Helpers for nodejs                |
-| prj-cljs-test          | Helpers for cljs.test             |
-| prj-cljs-repl-figwheel | Helpers for cljs repl on figwheel |
+| Functions              | dsec                              | version                                                                                                                                   |
+| :-                     | :-                                | :-                                                                                                                                        |
+| prj-core               | Bootstraping tasks.               | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-core.svg)](https://clojars.org/jp.nijohando.prj/prj-core)       |
+| prj-repl               | Helpers for repl                  | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-repl.svg)](https://clojars.org/jp.nijohando.prj/prj-repl)       |
+| prj-test               | Helpers for clojure.test          | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-test.svg)](https://clojars.org/jp.nijohando.prj/prj-test)       |
+| prj-package            | Deployment, Installation jar      | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-package.svg)](https://clojars.org/jp.nijohando.prj/prj-package) |
+| prj-cljs               | Helpers for cljs build            | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-cljs.svg)](https://clojars.org/jp.nijohando.prj/prj-cljs)       |
+| prj-cljs-nodejs        | Helpers for nodejs                | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-cljs.svg)](https://clojars.org/jp.nijohando.prj/prj-cljs)       |
+| prj-cljs-test          | Helpers for cljs.test             | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-cljs-test.svg)](https://clojars.org/jp.nijohando.prj/prj-cljs-test)                                                                                                                               |
+| prj-cljs-repl-figwheel | Helpers for cljs repl on figwheel | [![Clojars Project](https://img.shields.io/clojars/v/jp.nijohando.prj/prj-cljs-repl-figwheel.svg)](https://clojars.org/jp.nijohando.prj/prj-cljs-repl-figwheel)                                                                                                                |
 
-## Installation
+## Examples
 
-### prj-core
+* https://github.com/nijohando/failable
 
-```clojure
-jp.nijohando.prj/prj-core {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-repl
-
-```clojure
-jp.nijohando.prj/prj-repl {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-test
-
-```clojure
-jp.nijohando.prj/prj-test {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-package
-
-```clojure
-jp.nijohando.prj/prj-package {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-cljs
-
-```clojure
-jp.nijohando.prj/prj-cljs {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-cljs-nodejs
-
-```clojure
-jp.nijohando.prj/prj-cljs-nodejs {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-cljs-test
-
-```clojure
-jp.nijohando.prj/prj-cljs-nodejs {:mvn/version "1.0.0-SNAPSHOT"}
-```
-
-### prj-cljs-repl-figwheel
-
-```clojure
-jp.nijohando.prj/prj-cljs-repl-figwheel {:mvn/version "1.0.0-SNAPSHOT"}
-```
 
 ## License
 
