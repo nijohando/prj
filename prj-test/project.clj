@@ -1,4 +1,4 @@
-(defproject jp.nijohando.prj/prj-test "1.0.0"
+(defproject jp.nijohando.prj/prj-test "1.0.1"
   :description "Test helper functions for prj"
   :url "http://github.com/nijohando/prj"
   :license {:name "Eclipse Public License"
