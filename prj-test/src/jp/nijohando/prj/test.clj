@@ -4,5 +4,5 @@
 (defn run-tests
   [& test-case-symbols]
   (doseq [s test-case-symbols]
-    (require s :reload-all))
+    (require s :reload))
   (apply t/run-tests test-case-symbols))
