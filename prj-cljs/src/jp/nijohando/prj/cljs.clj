@@ -1,23 +1,26 @@
 (ns jp.nijohando.prj.cljs
   (:require [cljs.build.api]
-            [meta-merge.core :refer [meta-merge]]
-            [figwheel-sidecar.repl-api :as ra]
-            [jp.nijohando.prj.core :refer [work-dir]])
-  (:import (java.lang ProcessBuilder$Redirect)))
+            [clojure.tools.reader.edn :as edn]
+            [meta-merge.core :refer [meta-merge]]))
 
-(defn merge-config
-  [configs profiles]
-  (->> configs
-       ((apply juxt profiles))
+(defn- load-edn-file
+  [path]
+  (->> (slurp path)
+       (edn/read-string)))
+
+(defn compiler-options
+  [& paths]
+  (->> paths
+       (map #(load-edn-file %))
        (apply meta-merge)))
 
 (defn build-cljs
-  ([conf]
-   (build-cljs conf nil))
-  ([conf extra-sources]
+  ([compiler-options]
+   (build-cljs compiler-options nil))
+  ([compiler-options extra-sources]
    (let [sources (comp #(apply cljs.build.api/inputs %)
                        #(concat % extra-sources)
                        :source-paths)]
-     (->> conf
+     (->> compiler-options
           ((juxt sources :compiler))
           (apply cljs.build.api/build)))))
